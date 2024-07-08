@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css">
+    <title>Truhlářstvím za štěstím</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+            opacity: 0.6;
+            background-image: url('/background.JPEG');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative; /* Needed for absolute positioning of h3 */
+        }
+        h2 {
+            font-size: 5vw; /* Scales with viewport width */
+            margin: 0;
+            position: absolute;
+            bottom: 50%;
+            transform: translateY(50%);
+        }
+        .text1 {
+            font-size: 2vw; /* Scales with viewport width */
+            margin: 0;
+            position: absolute;
+            font-weight: 500;
+            top: 25px;
+        }
+        @media screen and (max-width: 800px) {
+  .text1 {
+    top: 80px;
+    font-size: 5vw;
+  }
+}
+        .text2 {
+            font-size: 6vw; /* Scales with viewport width */
+            margin: 0;
+            position: absolute;
+            font-weight: 500;
+            top: 350px;
+        }
+        @media screen and (max-width: 800px) {
+  .text2 {
+
+    font-size: 8vw;
+  }
+}
+        .text3 {
+            font-size: 3vw; /* Scales with viewport width */
+            margin: 0;
+            position: absolute;
+            font-weight: 500;
+            top: 550px;
+        }
+        @media screen and (max-width: 800px) {
+  .text3 {
+    top: 500px;
+    font-size: 5vw;
+  }
+}
+        .text4 {
+            font-size: 1.5vw; /* Scales with viewport width */
+            margin: 0;
+            position: absolute;
+            font-weight: 500;
+            top: 670px;
+            color: black;
+            background-color: white;
+            border-color: white;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-style: solid;
+            border-radius: 40px;
+            text-decoration: none;
+            animation: moveLeftAndRight 6s linear infinite; /* Animation added */
+        }
+        @keyframes moveLeftAndRight {
+            0%, 100% {
+                transform: translateX(-1vw); /* Starting and ending point */
+            }
+            50% {
+                transform: translateX(1vw); /* Middle point */
+            }
+        }
+        @media screen and (max-width: 800px) {
+  .text4 {
+    top: 620px;
+    font-size: 4vw;
+  }
+}
+        .bi-instagram {
+            font-size: 75px;
+            color: white;
+            position: absolute;
+            top: 770px; /* Adjusted position to align properly */
+            transition: transform 0.3s ease-in-out; /* Smooth transition */
+        }
+        .bi-instagram:hover {
+            transform: scale(1.2) rotate(10deg); /* Scale up and rotate slightly on hover */
+        }
+        @media screen and (max-width: 800px) {
+.bi-instagram {
+    top: 720px;
+    font-size: 9vw;
+  }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3 class="text1">Truhlářstvím za štěstím</h3>
+        <h1 class="text2">PŘIPRAVUJEME!</h1>
+        <h3 class="text3">Právě pracujeme na spuštění našeho webu.</h3>
+        <a target="_blank" href="https://www.instagram.com/truhlarstvim_za_stestim/" class="text4">KONTAKTUJTE NÁS</a>
+        <a target="_blank" href="https://www.instagram.com/truhlarstvim_za_stestim/" class="bi bi-instagram"></a>
+    </div>
+</body>
+</html>
