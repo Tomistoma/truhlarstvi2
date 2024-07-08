@@ -1,18 +1,21 @@
 const express = require('express');
 const path = require('path');
-const cors = require('cors');
+
+var cors = require('cors')
+
 
 const PORT = process.env.PORT || 3000;
 
-const app = express();
-app.use(cors());
+const app = express()
+app.use(cors())
+app.use(express.static('public'));
 
-// Serve static files from the root directory
-app.use(express.static(path.join(__dirname)));
+// Middleware to serve static files from the "public" directory
+app.use('/public', express.static(path.join(__dirname, 'public')));
 
 // Serve the index.html file for the root URL
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 // Start the server
