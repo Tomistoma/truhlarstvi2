@@ -17,19 +17,27 @@
             color: white;
             text-align: center;
         }
+        img{
+            size: auto 100%; /* Adjust to ensure height fits the viewport */
+            position: top center; /* Start image at the top */
+            max-width: 100%;
+            margin-top: -500px;
+        }
+        @media screen and (max-width: 800px) {
+            img { 
+                min-height: 800px;
+            }
+        }
         .container {
             width: 100%;
             height: 100%;
             opacity: 0.55;
-            background-image: url('/public/backgroundCropped.jpeg'); /* Corrected path */
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
             display: flex;
             flex-direction: column;
             align-items: center;
             position: relative; /* Needed for absolute positioning of h3 */
         }
+
         h2 {
             font-size: 5vw; /* Scales with viewport width */
             margin: 0;
@@ -45,24 +53,24 @@
             top: 25px;
         }
         @media screen and (max-width: 800px) {
-        .text1 { 
-            top: 50px;
-            font-size: 5vw;
-  }
-}
+            .text1 { 
+                top: 50px;
+                font-size: 5vw;
+            }
+        }
         .text2 {
             font-size: 6vw; /* Scales with viewport width */
             margin: 0;
             position: absolute;
             font-weight: 500;
-            top: 250px;
+            top: 170px;
         }
         @media screen and (max-width: 800px) {
-        .text2 { 
-            top: 380px;
-            font-size: 10vw;
-  }
-}
+            .text2 { 
+                top: 380px;
+                font-size: 10vw;
+            }
+        }
         .text3 {
             font-size: 3vw; /* Scales with viewport width */
             margin: 0;
@@ -71,11 +79,11 @@
             top: 450px;
         }
         @media screen and (max-width: 800px) {
-        .text3 { 
-            top: 460px;
-            font-size: 6vw;
-  }
-}
+            .text3 { 
+                top: 460px;
+                font-size: 6vw;
+            }
+        }
         .text4 {
             font-size: 1.5vw; /* Scales with viewport width */
             margin: 0;
@@ -103,11 +111,11 @@
             }
         }
         @media screen and (max-width: 800px) {
-        .text4 { 
-            top: 580px;
-            font-size: 7vw;
-  }
-}
+            .text4 { 
+                top: 580px;
+                font-size: 7vw;
+            }
+        }
         .bi-instagram {
             font-size: 75px;
             color: white;
@@ -120,14 +128,15 @@
         }
         @media screen and (max-width: 800px) {
             .bi-instagram { 
-            top: 700px;
-            font-size: 12vw;
-  }
-}
+                top: 700px;
+                font-size: 12vw;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <img src="/public/backgroundCropped.jpeg">
         <h3 class="text1">Truhlářstvím za štěstím</h3>
         <h1 class="text2">PŘIPRAVUJEME!</h1>
         <h3 class="text3">Právě pracujeme na spuštění našeho webu.</h3>

@@ -1,0 +1,77 @@
+
+body, html {
+    background-color: black;
+    color: white; /* Set text color to white for better contrast */
+    margin: 0;
+    padding: 0;
+  }
+
+  /* General Styling */
+.three-rows-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* Each row styling */
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #1c1c1c; /* Dark background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Image container */
+  .image-container {
+    width: 50%;
+    padding: 10px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Text container */
+  .text-container {
+    width: 50%;
+    padding: 10px;
+    color: #ffffff;
+  }
+  
+  .text-container h2 {
+    font-size: 1.8rem;
+    color: #b6977b; /* Accent color */
+    margin-bottom: 10px;
+  }
+  
+  .text-container p {
+    font-size: 1.1rem;
+    color: #cccccc;
+    line-height: 1.6;
+  }
+  
+  /* Reverse row for alternate design (image on the right) */
+  .reverse {
+    flex-direction: row-reverse;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 800px) {
+    .row {
+      flex-direction: column; /* Stack image and text vertically */
+    }
+  
+    .image-container, .text-container {
+      width: 100%; /* Full width on mobile */
+    }
+  
+    .reverse {
+      flex-direction: column; /* Same stacking on mobile for reverse */
+    }
+  }
+  

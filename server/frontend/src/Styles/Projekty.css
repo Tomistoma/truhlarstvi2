@@ -1,0 +1,95 @@
+/* General Container */
+.projects-container {
+    width: 100%;
+    padding: 40px 20px;
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    text-align: left;
+  }
+  
+  /* Intro Section */
+  .projects-intro {
+    margin-bottom: 30px;
+  }
+  
+  .projects-intro h1 {
+    font-size: 2rem;
+    color: #b6977b;
+    margin-bottom: 15px;
+  }
+  
+  .projects-intro p {
+    font-size: 1rem;
+    color: #cccccc;
+    line-height: 1.5;
+  }
+  
+  /* Tri-Card Section */
+  .project-triple {
+    margin-bottom: 40px;
+  }
+  
+  .project-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 95%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Project Card Styling */
+  .project-card {
+    width: 30%;
+  }
+  
+  .project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .project-card-text {
+    width: 40%;
+    text-align: left;
+    color: #cccccc;
+  }
+  
+  .project-card-text h2 {
+    font-size: 1.5rem;
+    color: #b6977b;
+    margin-bottom: 10px;
+  }
+  
+  .project-card-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 800px) {
+    .project-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .project-card,
+    .project-card-text {
+      width: 100%;
+    }
+  }
+
+  .button {
+    display: inline-block;
+    background-color: #b6977b;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  

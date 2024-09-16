@@ -1,0 +1,291 @@
+
+body, html {
+    background-color: black;
+    color: white; /* Set text color to white for better contrast */
+    margin: 0;
+    padding: 0;
+  }
+
+
+/* General layout */
+.main-content {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #000000;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    background-color: #000000;
+  }
+  
+  .hero-image {
+    width: 57%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    opacity: 0.8;
+    
+  }
+  
+  .hero-text {
+    width: 50%;
+    padding-left: 20px;
+  }
+  
+  .hero-text h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  .hero-text h2:hover {
+    font-size: 2rem;
+    color: #b6977b;
+    margin-bottom: 10px;
+  }
+  
+  
+  .hero-text p {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  .news-tag {
+    display: inline-block;
+    background-color: #b6977b;
+    color: #fff;
+    padding: 15px 15px;
+    border-radius: 5px;
+    margin-left: 90%;
+    cursor: pointer;
+  }
+  
+
+
+
+  
+  /* Featured Content Section */
+  .featured-content {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+    background-color: #000000;
+    padding-top: 30px;
+  }
+  
+  .featured-item {
+    text-align: center;
+    width: 30%;
+  }
+  
+  .featured-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    opacity: 0.6;
+    transition: transform 0.3s ease-in-out
+  }
+  .featured-image:hover {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    opacity: 1;
+    transform: scale(1.05); /* Slightly increase the size (5% larger) */
+    
+  }
+  
+  .featured-item h4 {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #ffffff;
+  }
+  /* General layout */
+.main-content {
+    font-family: Arial, sans-serif;
+    color: #000000;
+  }
+  .top-panel {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Vertically center items */
+    height: 22vh; /* Panel height */
+    width: 100%;
+    background-color: #000000; /* Dark background */
+    border-bottom: 4px solid #b6977b; /* Only bottom border with 2px white line */
+    padding: 0 20px; /* Add some padding */
+    box-sizing: border-box;
+    position: relative; /* Allows the logo to be centered and navbar to be aligned to the right */
+  }
+  
+  .logo {
+    max-width: 15%;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 1px;
+    position: absolute;
+    left: 50%; /* Center the logo relative to the panel */
+    transform: translateX(-50%); /* Adjust for centering */
+  }
+  
+  .navbar {
+    margin-left: auto; /* Push the navbar to the right */
+    margin-right: 25px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    margin-left: 20px;
+  }
+  
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .navbar ul li a:hover {
+    color: #b6977b; /* Highlight color on hover */
+  }
+
+  .numbers-panel {
+    display: flex;
+    justify-content: space-around; /* Space items evenly */
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+    border-radius: 50px;
+    border-style: solid;
+    border-color:#b6977b;
+    margin: 35px;
+  }
+  
+  .number-item {
+    text-align: center;
+  }
+  
+  .number-item h3 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #b6977b; /* Green color to make the number stand out */
+  }
+  
+  @media screen and (max-width: 800px) {
+    .numbers-panel {
+      flex-direction: column; /* Stack the items on small screens */
+      padding: 10px;
+    }
+  
+    .number-item {
+      margin-bottom: 20px;
+    }
+  }
+
+  .footer {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text for contrast */
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #b6977b; /* Subtle bottom border for separation */
+  }
+  
+  .footer-section {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .footer-section h3, .footer-section h4 {
+    color: #b6977b; /* Accent color */
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p {
+    margin: 5px 0;
+    color: #ccc; /* Slightly lighter text color */
+  }
+  
+  .social-icons a {
+    color: #b6977b;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  .social-icons a:hover {
+    color: #00b894; /* Highlight green on hover */
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .footer-bottom p {
+    color: #ccc; /* Subtle lighter color for copyright text */
+  }
+  
+  @media screen and (max-width: 800px) {
+    .footer-container {
+      flex-direction: column;
+    }
+  
+    .footer-section {
+      padding: 10px;
+      text-align: center;
+    }
+  }
+
+  .scroll-arrow-container {
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 1000; /* Ensure it stays on top of other content */
+    margin-right: 45%;
+    margin-top: 15%;
+    transform: rotate(180deg);
+  }
+  
+  .scroll-arrow {
+    font-size: 2rem; /* Adjust the size of the arrow */
+    color: #fff; /* White color for the arrow */
+    animation: bounce 1.5s infinite; /* Apply the bounce animation */
+    cursor: pointer; /* Change cursor to pointer */
+ 
+  }
+  
+  /* Define the up and down animation */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0); /* Starting and ending point */
+    }
+    50% {
+      transform: translateY(-10px); /* Move up slightly */
+    }
+  }
