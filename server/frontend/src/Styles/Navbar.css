@@ -1,0 +1,66 @@
+/* Navbar layout */
+.top-panel {
+    display: flex;
+    justify-content: space-between; /* Align logo to the left and navbar to the right */
+    align-items: center; /* Vertically center items */
+    height: 22vh; /* Panel height */
+    width: 100%;
+    background-color: #000000; /* Dark background */
+    border-bottom: 4px solid #b6977b; /* Bottom border */
+    padding: 0 20px; /* Add some padding */
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  /* Logo styling */
+  .logo {
+    max-width: 15%;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 1px;
+    position: relative;
+    margin-left: 100px;
+    left: 0; /* Align the logo to the left of the page */
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    margin-left: auto; /* Push the navbar to the right */
+    margin-right: 25px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    margin-left: 20px;
+  }
+  
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .navbar ul li a:hover {
+    color: #b6977b; /* Highlight color on hover */
+  }
+
+  .drawer-button {
+    color: white;
+    font-size: 1.2rem;
+    background-color: #b6977b;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .drawer-button:hover {
+    background-color: #a67a5a;
+  }
+  
+  
