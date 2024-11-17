@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Handle fallback to serve "public/index.html" for all other routes
 app.get('*', (req, res) => {
-   res.sendFile(path.join(__dirname, 'public', 'index.html'));
+   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 // Start the server
