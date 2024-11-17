@@ -7,15 +7,16 @@ const PORT = process.env.PORT || 3000;
 const app = express();
 app.use(cors());
 
-// Serve static files from the "build" directory
-app.use(express.static(path.join(__dirname, 'build')));
+// Serve static files from the "public" directory
+app.use(express.static(path.join(__dirname, 'public')));
 
-// Handle fallback to serve "build/index.html" for all other routes
+
+// Handle fallback to serve "public/index.html" for all other routes
 app.get('*', (req, res) => {
-   res.sendFile(path.join(__dirname, 'build', 'index.html'));
+   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 // Start the server
 app.listen(PORT, () => {
-    console.log(`Server running at http://127.0.0.1:${PORT}/`);
+    console.log(`A Server running at http://127.0.0.1:${PORT}/`);
 });
