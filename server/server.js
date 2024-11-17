@@ -7,21 +7,16 @@ const PORT = process.env.PORT || 3000;
 const app = express();
 app.use(cors());
 
-// Serve static files from the React app's "build" directory
-app.use(express.static(path.join(__dirname, 'build')));
+// Serve static files from the "public" directory
+app.use(express.static(path.join(__dirname, 'public')));
 
-// All requests for static assets like JS/CSS/images will automatically be served from the "build" directory
 
-// For all other routes (that are not static files), serve the index.html file
-
+// Handle fallback to serve "public/index.html" for all other routes
 app.get('*', (req, res) => {
-
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
-
 
 // Start the server
 app.listen(PORT, () => {
-    //tady by mělo být něco jinak
-    console.log(`Server running at http://127.0.0.1:${PORT}/`);
+    console.log(`A Server running at http://127.0.0.1:${PORT}/`);
 });
