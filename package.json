@@ -5,9 +5,8 @@
   "main": "server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server/server.js",
-    "build": "react-scripts build",
-    "heroku-postbuild": "npm run build"
+    "start": "node server/server.js"
+
   },
   "author": "",
   "license": "ISC",
@@ -21,6 +20,9 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "^5.0.1"
-  }
+  },
+  "engines": {
+  "node": "17.x"
+}
   
 }
